@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nova+Square&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6) ), url("./images/Candid01-1024x683.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 6%;
+}
+nav img {
+    width: 75px;
+}
+.navbar {
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+.navbar ul li a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+.homeBlock1 {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.homeBlock1 h1 {
+    font-size: 62px;
+    color: rgb(0, 238, 255);
+    font-family: 'Nova Square', sans-serif;
+}
+.homeBlock1 p {
+    font-size: 16px;
+    margin: 10px 0 40px;
+    font-family: 'Inter', sans-serif;
+}
+.homeBlock1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 12px 34px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Nova Square', sans-serif;
+}
+.homeBlock1 a:hover {
+    border: 1px solid rgb(0, 238, 255);
+    background-color: rgb(0, 238, 255);
+    color: black;
+    transition: 1s;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color:rgb(206, 40, 40);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+h2 {
+    font-size: 42px;
+    font-weight: 900;
+    color: blue;
+}
+p {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+}
+.homeBlock2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.homeBlock2-card {
+    background-color: rgb(169, 87, 201);
+    border-radius: 20px;
+    margin-bottom: 5%;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    padding:20px 12px;
+}
+.homeBlock2-card h3 {
+    color: rgb(255, 251, 0);
+    font-size: 29px;
+}
+.homeBlock2-card p {
+    color: #fff;
+}
+.homeBlock2-card:hover {
+    box-shadow: 0 0 40px 0 rgba(255, 255, 0, 0.400);
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color:black ;
+    
+}
+.icons i {
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+}
+footer p {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.icons i:hover {
+    color: gold;
+}
+.sub-header{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("./images/BibleScienceBG.jpg");
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1{
+    margin-top: 150px;
+    color: white;
+    font-size: 60px;
+}
+.projectsBlock1 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5%;
+}
+.projectsBlock1-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    border-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.projectsBlock1-col img {
+    width: 100%;
+    display: block;
+}
+.label {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.label:hover {
+    background: rgba(206, 40, 40, 0.6);
+}
+
+.label h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.label:hover h3{
+    bottom: 48%;
+}
+.blog {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-left {
+    flex-basis: 65%;
+}
+.blog-left img {
+    width: 100%;
+}
+.blog-left h2 {
+    color: #000;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.blog-left p {
+    padding: 0;
+    color: #999;
+}
+.comment-box {
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3 {
+    text-align: left;
+}
+.comment-box input, .comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    background: #f0f0f0;
+    box-sizing: border-box;
+    outline: none;
+}
+.blog-right {
+    flex-basis: 32%;
+}
+.blog-right h3 {
+    background: rgb(206, 40, 40);
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.blog-right div{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+}
+.blog-right div:hover {
+    background: rgb(241, 155, 24);
+    transition: 1s;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    position: relative;
+    cursor: pointer;
+background-color: black;
+}
+.btn:hover{
+    border: 1px solid rgb(206, 40, 40);
+    background-color: rgb(206, 40, 40);
+    transition: 1s;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.contact-col div .fa-solid{
+    font-size: 28px;
+    color: rgb(206, 40, 40);
+    margin: 10px;
+    margin-right: 40px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    outline: none;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+nav .fa-solid {
+    display: none;
+}
+@media(max-width:700px) {
+    .home h1{
+        font-size: 25px;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar{
+        position: fixed;
+        background: rgb(206, 40, 40);
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-bars, nav .fa-x{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navbar ul{
+        padding: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .projectsBlock1-col {
+        margin-bottom: 50px;
+    }
+     .sub-header h1 {
+        font-size: 30px;
+    }
+}

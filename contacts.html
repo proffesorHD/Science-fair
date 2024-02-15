@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
+"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/5205254.png" alt=""></a>
+            <div id="navLinks" class="navbar">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                    <li><a href="./contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+    <main>
+        <section class="location">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0576d2d1a52783d4da332b0ccd27e7381e7aa924fe2566d997436adede3bc21a&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <span>
+                            <h5>NYZ Road, ABC Building</h5>
+                            <p>SIllicon Valley, USA</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>+123456789</h5>
+                            <p>Mon to Sun, 9AM to 9PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>info@gmail.com</h5>
+                            <p>24/7</p>
+                        </span>
+                    </div>
+                </div>
+                    <div class="contact-col">
+                        <form>
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="10" placeholder="Your comment"></textarea>
+                            <button type="submit" class="btn red-btn">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <h2>About Us</h2>
+        <p>Join us on this journey of exploration and make science a part of your everyday adventure</p>
+        <div class="icons">
+            <a target="_blank" href="https://www.youtube.com/watch?v=AJdYLAc-gzM"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Science_fair"><i
+                    class="fa-brands fa-wikipedia-w"></i></a>
+            <a target="_blank"
+                href="https://upload.wikimedia.org/wikipedia/commons/a/a5/US_Navy_100416-N-5539C-006_Construction_Electrician_3rd_Class_Jill_Johnston_and_Lt._Col._Johnny_Lizama_listen_to_third-graders_from_Harry_S._Truman_Elementary_School_explain_their_science_projects.jpg"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://atomicbetty.fandom.com/wiki/Science_Fair"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = '0'
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-200px'
+        }
+    </script>
+</body>
+</html>
